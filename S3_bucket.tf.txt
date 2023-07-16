@@ -1,0 +1,10 @@
+resource "aws_s3_buket"  "buket" {
+    bucket = "sample_buket"
+    acl  = "private"  #we can "public" as well, if we give public everyone can see this S3_buket
+
+    tags = {
+        Name = "My_S3_buket"
+        Environment = "Dev"
+    } 
+  
+}
